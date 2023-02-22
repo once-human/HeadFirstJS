@@ -2,3 +2,6 @@ div.iRock{
     margin-top: 100px;
     text-align: center;
 }
+#irock{
+    cursor: pointer;
+}
