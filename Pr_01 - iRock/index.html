@@ -1,16 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iRock</title>
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
+    <script>
+        function touchRock() {
+            var userName = prompt("What is your Name?", "Enter your name here");
+
+            if (userName) {
+                alert("Hey " + userName + ". It's good to meet you!");
+                document.getElementById("irock").src = "rock_happy.png";
+            }
+        }
+
+        window.onload = function () {
+            alert("Hello, I'm your pet rock!");
+            document.getElementById("irock").onclick = touchRock;
+        };
+    </script>
 </head>
-<body onload="alert('Hello, Im your pet Rock !');">
-    <div class="irock">
-        <img id="irock" src="rock.png" alt="iRock"/>
+
+<body>
+
+    <div class="iRock">
+        <img id="irock" src="rock.png" alt="iRock" />
     </div>
+
 </body>
+
 </html>
