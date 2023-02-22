@@ -1,0 +1,1 @@
+window.onload="alert('Hello, Im your pet Rock !');"
