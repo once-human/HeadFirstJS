@@ -9,4 +9,11 @@ function updateOrder(){
     var total = subTotal + tax;
 
     document.getElementById("subtotal").innerHTML = "$" + subTotal.toFixed(2);
+    document.getElementById("tax").innerHTML = "$" + tax.toFixed(2);
+    document.getElementById("total").innerHTML = "$" + total.toFixed(2);
+};
+
+function placeOrder(){
+    // Submit Order to the Server
+    form.Submit();
 };
