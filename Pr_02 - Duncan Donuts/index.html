@@ -9,6 +9,15 @@
     <script src="main.js"></script>
 </head>
 <body>
-    
+    <div id="frame">
+        <form name = "orderform" action = "donuts.php" method = "POST" >
+            <div class="field">
+                # of cake donuts: <input type="text" id="cakedonuts" name="cakedonuts" value="" onchange="updateOrder();"/>
+            </div>
+            <div class="field">
+                # of glazed donuts: <input type="text" id="glazeddonuts" name="glazeddonuts" value="" onchange="updateOrder();"/>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
