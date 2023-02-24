@@ -17,5 +17,3 @@ function placeOrder(){
     // Submit Order to the Server
     form.Submit();
 };
-
-// document.getElementById("placeOrderBtn").onclick="placeOrder(document.getElementByID('orderForm').form)";
